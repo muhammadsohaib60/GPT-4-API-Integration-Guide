@@ -5,18 +5,19 @@ This repository provides a step-by-step guide to connect to OpenAI's GPT-4 API u
 
 Prerequisites
 OpenAI Account: Sign up at OpenAI.
+
 API Key: Generate your API key from the API Keys section of your account.
+
 Python Environment: Ensure Python 3.7+ is installed.
+
 Installation
+
 Install the openai Python library:
 
-bash
-Copy code
+
 pip install openai
 Basic Usage
-Example Code
-python
-Copy code
+
 import openai
 
 # Set your API key
@@ -39,8 +40,7 @@ Flask API Integration
 Here’s how to wrap GPT-4 in a Flask API for your application.
 
 Flask Code
-python
-Copy code
+
 from flask import Flask, request, jsonify
 import openai
 
@@ -70,15 +70,11 @@ Save the code above in a file named app.py.
 
 Run the Flask application:
 
-bash
-Copy code
 python app.py
 Use a tool like Postman or cURL to test the API.
 
 Example Request:
 
-bash
-Copy code
 curl -X POST -H "Content-Type: application/json" -d '{"message": "What is GPT-4?"}' http://127.0.0.1:5000/chat
 Deployment
 Deploy your Flask application using any of the following platforms:
