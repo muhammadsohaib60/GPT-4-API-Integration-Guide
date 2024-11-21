@@ -37,9 +37,8 @@ response = openai.ChatCompletion.create(
 # Print the response
 print(response['choices'][0]['message']['content'])
 Flask API Integration
-Here’s how to wrap GPT-4 in a Flask API for your application.
 
-Flask Code
+Here’s how to wrap GPT-4 in a Flask API for your application.
 
 from flask import Flask, request, jsonify
 import openai
