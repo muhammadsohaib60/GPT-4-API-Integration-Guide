@@ -65,37 +65,55 @@ def chat():
 if __name__ == '__main__':
     app.run(debug=True)
 Running the Flask App
+
 Save the code above in a file named app.py.
 
 Run the Flask application:
 
 python app.py
+
 Use a tool like Postman or cURL to test the API.
 
 Example Request:
 
 curl -X POST -H "Content-Type: application/json" -d '{"message": "What is GPT-4?"}' http://127.0.0.1:5000/chat
 Deployment
+
 Deploy your Flask application using any of the following platforms:
 
 AWS Lambda
 Google Cloud Run
 Heroku
 Render
+
 For deployment details, refer to the respective platform's documentation.
 
 Advanced Configuration
+
 Parameters for ChatCompletion.create
+
 model: Specify "gpt-4" for GPT-4.
+
 messages: A list of messages simulating a chat.
+
 role: system: Sets assistant behavior.
+
 role: user: User's input.
+
 temperature: Controls randomness (0.0 for deterministic, 1.0 for creative).
+
 max_tokens: Limits the length of the response.
+
 Security Tips
+
 Store API keys securely using environment variables or secrets managers.
+
 Avoid hardcoding sensitive information in your scripts.
+
 Troubleshooting
+
 Rate Limits: Check your OpenAI usage limits.
+
 Invalid API Key: Ensure your API key is correct and active.
+
 Connection Errors: Verify internet connectivity and API endpoint.
